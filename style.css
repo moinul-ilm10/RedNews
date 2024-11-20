@@ -124,3 +124,128 @@ p {
   color: var(--color-social-icon-bg);
   letter-spacing: 0.5px;
 }
+
+#newsletter {
+  padding: 80px 250px;
+}
+
+.newsletter-card {
+  /* background-color: var(--color-section-bg); */
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    var(--color-section-bg),
+    var(--color-section-content)
+  );
+}
+
+.newsletter-content {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-image-text {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+}
+
+.newsletter-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.newsletter-text h3 {
+  color: var(--color-highlight);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.newsletter-text p {
+  font-size: 16px;
+  color: var(--color-social-icon-bg);
+  word-spacing: 8px;
+  letter-spacing: 0.3px;
+  line-height: 25px;
+}
+
+/* .newsletter-email-input {
+  text-align: center;
+}
+
+.newsletter-email-input input {
+  border: 3px solid var(--color-highlight);
+  width: 50%;
+  height: 18px;
+  border-radius: 50px;
+  background: var(--color-section-content);
+  padding: 11px;
+  outline: none;
+}
+
+.email-submit-btn {
+  outline: none;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: var(--color-highlight);
+  color: var(--color-section-content);
+  width: 15%;
+} */
+
+.newsletter-email-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px; /* Optional: Set a max-width for the input */
+  margin: 20px auto;
+  text-align: center;
+}
+
+.email-input-field {
+  width: 100%;
+  padding: 12px 19px;
+  border: 2px solid var(--color-highlight); /* Optional: Border matching the theme */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 16px;
+  outline: none;
+  color: var(--color-section-content);
+  background-color: var(--color-section-bg);
+  color: var(--color-paragraph);
+}
+
+.email-input-field::placeholder {
+  color: var(--color-highlight);
+  opacity: 0.7;
+}
+
+.email-submit-btn {
+  position: absolute;
+  right: -41px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-highlight);
+  color: var(--color-section-bg);
+  padding: 13px 45px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a lifted effect */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.email-submit-btn:hover {
+  background-color: var(--color-hover);
+  color: var(--color-section-bg);
+}
+
+.newsletter-caption {
+  color: var(--color-paragraph);
+  font-size: 12px;
+  font-family: var(--font-secondary);
+  margin-top: -14px;
+}
