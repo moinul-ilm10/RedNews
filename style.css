@@ -1,4 +1,8 @@
 :root {
+  /* Global Font Variables */
+  --font-primary: "Merriweather", serif;
+  --font-secondary: "Lato", sans-serif;
+
   /* Base Colors */
   --color-body: #dcdda1;
   --color-highlight: #fcee21;
@@ -27,4 +31,14 @@
 
 body {
   background-color: var(--color-body);
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
 }
