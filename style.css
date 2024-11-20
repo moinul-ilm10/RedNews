@@ -1,3 +1,25 @@
+:root {
+  /* Base Colors */
+  --color-body: #dcdda1;
+  --color-highlight: #fcee21;
+
+  /* Section Colors */
+  --color-section-bg: #183114;
+  --color-section-content: #446129;
+
+  /* Text Colors */
+  --color-paragraph: #fafafa;
+
+  /* Card Colors */
+  --color-card-bg: #dcde9f;
+
+  /* Interaction Colors */
+  --color-hover: #f8ed41;
+
+  /* Social Icon Colors */
+  --color-social-icon-bg: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
