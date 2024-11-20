@@ -42,3 +42,23 @@ h5,
 h6 {
   font-family: var(--font-secondary);
 }
+
+/* --------------------------- footer section style -------------------------------------- */
+#footerSection {
+  background-color: var(--color-section-bg);
+}
+.container {
+  padding: 25px 50px 15px 50px;
+}
+
+.footer-body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-heading {
+  font-size: 30px;
+  font-weight: bolder;
+  color: var(--color-highlight);
+}
