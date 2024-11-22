@@ -44,6 +44,58 @@ p {
   font-family: var(--font-secondary);
 }
 
+/* --------------------------- navbar section style -------------------------------------- */
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-section-bg);
+  padding: 0px 60px;
+  z-index: 10;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  position: relative;
+  max-height: 106px;
+  width: auto;
+  bottom: -8px;
+}
+
+.navbar-link ul {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  list-style: none;
+}
+
+.navbar-link ul > li > a {
+  text-decoration: none;
+  color: var(--color-social-icon-bg);
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link ul > li > a:hover {
+  color: var(--color-hover);
+  font-weight: bold;
+}
+.navbar-link ul > li > a:active {
+  color: var(--color-hover);
+  font-weight: bold;
+}
+
 /* --------------------------- footer section style -------------------------------------- */
 #footerSection {
   background-color: var(--color-section-bg);
@@ -171,29 +223,6 @@ p {
   letter-spacing: 0.3px;
   line-height: 25px;
 }
-
-/* .newsletter-email-input {
-  text-align: center;
-}
-
-.newsletter-email-input input {
-  border: 3px solid var(--color-highlight);
-  width: 50%;
-  height: 18px;
-  border-radius: 50px;
-  background: var(--color-section-content);
-  padding: 11px;
-  outline: none;
-}
-
-.email-submit-btn {
-  outline: none;
-  border-radius: 50px;
-  padding: 10px;
-  background-color: var(--color-highlight);
-  color: var(--color-section-content);
-  width: 15%;
-} */
 
 .newsletter-email-input {
   position: relative;
