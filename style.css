@@ -96,6 +96,38 @@ p {
   font-weight: bold;
 }
 
+/* --------------------------- hero banner section style -------------------------------------- */
+#heroBanner {
+  background-color: var(--color-section-bg);
+}
+
+.hero-banner-container {
+  display: flex;
+  flex-direction: row;
+  padding: 80px;
+}
+
+.hero-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-banner-title {
+  color: var(--color-highlight);
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.hero-banner-paragraph {
+  color: var(--color-social-icon-bg);
+  font-size: 28px;
+}
+
+.hero-banner-email {
+  width: 100%;
+}
 /* --------------------------- footer section style -------------------------------------- */
 #footerSection {
   background-color: var(--color-section-bg);
@@ -177,6 +209,7 @@ p {
   letter-spacing: 0.5px;
 }
 
+/* --------------------------- newsletter section style -------------------------------------- */
 #newsletter {
   padding: 80px 250px;
 }
@@ -265,7 +298,7 @@ p {
   border: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a lifted effect */
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-weight: var(--font-secondary);
+  font-family: var(--font-secondary);
 }
 
 .email-submit-btn:hover {
