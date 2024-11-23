@@ -1,0 +1,74 @@
+:root {
+  /* Global Font Variables */
+  --font-primary: "Merriweather", serif;
+  --font-secondary: "Lato", sans-serif;
+
+  /* Base Colors */
+  --color-body: #f3f4d3;
+  --color-highlight: #fcee21;
+
+  /* Section Colors */
+  --color-section-bg: #183114;
+  --color-section-content: #446129;
+
+  /* Text Colors */
+  --color-paragraph: #fafafa;
+
+  /* Card Colors */
+  --color-card-bg: #dcde9f;
+
+  /* Interaction Colors */
+  --color-hover: #f8ed41;
+
+  /* Social Icon Colors */
+  --color-social-icon-bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-body);
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--font-secondary);
+}
+
+.share-heading {
+  font-size: 45px;
+  color: var(--color-section-bg);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.share-social-link {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 45px;
+}
+
+.social-icon {
+  background-color: var(--color-section-bg);
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.share-social-link img {
+  width: 3rem;
+  height: 5rem;
+}
