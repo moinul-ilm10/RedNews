@@ -1,83 +1,96 @@
 $(document).ready(function () {
-  // Default number of cards to show initially and per load
-  const cardsToShow = 4;
+  // Configuration
+  const initialCards = 4;
+  const cardsPerLoad = 4;
+  const maxCards = 12;
 
-  // Hide all cards beyond the initial count
-  $(".blog-card:gt(" + (cardsToShow - 1) + ")").hide();
+  // State tracking
+  let currentlyShown = initialCards;
+  let isLoading = false;
 
-  // Store total number of cards
+  // Store total available cards
   const totalCards = $(".blog-card").length;
 
-  // Hide the button if there aren't more cards to show
-  if (totalCards <= cardsToShow) {
+  // Initial setup - hide cards beyond initial count
+  $(".blog-card:gt(" + (initialCards - 1) + ")").hide();
+
+  // Hide button if no additional cards to show
+  if (totalCards <= initialCards) {
     $(".latest-blog-btn").hide();
   }
 
-  // Track whether cards are expanded
-  let isExpanded = false;
+  // Update button text based on current state
+  function updateButtonText() {
+    const $button = $(".latest-blog-btn button");
 
-  // Add loading state flag
-  let isLoading = false;
+    if (currentlyShown >= maxCards || currentlyShown >= totalCards) {
+      $button.text("Go to Blogs");
+    } else {
+      $button.text("Load More");
+    }
+  }
 
-  $(".latest-blog-btn button").on("click", function () {
-    // Prevent multiple clicks while loading
-    if (isLoading) return;
+  // Handle loading of more cards
+  function loadMoreCards() {
+    const startIndex = currentlyShown;
+    const endIndex = Math.min(currentlyShown + cardsPerLoad, totalCards);
 
-    isLoading = true;
-    const $button = $(this);
+    // Get the first new card that will be shown
+    const $firstNewCard = $(".blog-card").eq(startIndex);
 
-    // Add loading indicator
-    $button.css("opacity", "0.7");
+    // Show next batch of cards with animation
+    $(".blog-card")
+      .slice(startIndex, endIndex)
+      .slideDown(600, function () {
+        currentlyShown = endIndex;
+        updateButtonText();
 
-    setTimeout(function () {
-      // Adding small delay for smooth transition
-      if (!isExpanded) {
-        // Show all hidden cards with animation
-        $(".blog-card:gt(" + (cardsToShow - 1) + ")").slideDown(
-          400,
+        // Scroll to the first new card
+        $("html, body").animate(
+          {
+            scrollTop: $firstNewCard.offset().top - 100, // 100px offset for better visibility
+          },
+          800,
           function () {
-            $button.text("Load Less");
-            isExpanded = true;
             isLoading = false;
-            $button.css("opacity", "1");
           }
         );
-      } else {
-        // Hide cards beyond initial count with animation
-        $(".blog-card:gt(" + (cardsToShow - 1) + ")").slideUp(400, function () {
-          $button.text("Load More");
-          isExpanded = false;
-          isLoading = false;
-          $button.css("opacity", "1");
+      });
+  }
 
-          // Scroll to last visible card if needed
-          const $lastVisibleCard = $(
-            ".blog-card:eq(" + (cardsToShow - 1) + ")"
-          );
-          if ($lastVisibleCard.length) {
-            $("html, body").animate(
-              {
-                scrollTop: $lastVisibleCard.offset().top - 100,
-              },
-              300
-            );
-          }
-        });
-      }
+  // Button click handler
+  $(".latest-blog-btn button").on("click", function (e) {
+    e.preventDefault();
+
+    // Prevent multiple clicks while loading
+    if (isLoading) return;
+    isLoading = true;
+
+    const $button = $(this);
+    $button.css("opacity", "0.7");
+
+    // If all cards are shown, redirect to blogs page
+    if (currentlyShown >= maxCards || currentlyShown >= totalCards) {
+      window.location.href = "blogs.html";
+      return;
+    }
+
+    // Add small delay for better UX
+    setTimeout(function () {
+      loadMoreCards();
+      $button.css("opacity", "1");
     }, 200);
   });
 
-  // Optional: Add window resize handler to maintain layout
+  // Handle window resize
   let resizeTimer;
   $(window).on("resize", function () {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(function () {
-      // Ensure proper layout after resize
-      if (isExpanded) {
-        $(".blog-card:gt(" + (cardsToShow - 1) + ")").show();
-      } else {
-        $(".blog-card:gt(" + (cardsToShow - 1) + ")").hide();
-      }
+      $(".blog-card").hide().slice(0, currentlyShown).show();
     }, 250);
   });
 });
+
+// Add this to verify script is running
+console.log("Enhanced blog loading functionality initialized");

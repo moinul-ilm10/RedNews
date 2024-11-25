@@ -1,6 +1,8 @@
 /* --------------------------- latest blogs and courses section style -------------------------------------- */
 #latestBlogs {
   padding: 25px;
+  position: relative;
+  overflow: hidden;
 }
 
 .latest-blogs-container {
@@ -18,9 +20,10 @@
 }
 
 .blog-container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px 20px;
 }
 
 .blog-card {
@@ -31,7 +34,9 @@
   border-radius: 20px;
   width: 350px;
   height: 500px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+  box-sizing: border-box;
 }
 
 .blog-card img {
