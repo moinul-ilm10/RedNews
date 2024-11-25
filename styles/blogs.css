@@ -112,3 +112,12 @@
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
+
+@media screen and (max-width: 767px) {
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px 10px;
+  }
+}
