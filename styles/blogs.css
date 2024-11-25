@@ -1,0 +1,109 @@
+/* --------------------------- latest blogs and courses section style -------------------------------------- */
+#latestBlogs {
+  padding: 25px;
+}
+
+.latest-blogs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.latest-blog-heading {
+  color: var(--color-section-bg);
+  font-size: 45px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  border: 0px;
+  outline: none;
+  border-radius: 20px;
+  width: 350px;
+  height: 500px;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-card img {
+  width: 350px;
+  height: auto;
+}
+
+.card-img {
+  position: relative;
+}
+
+.card-label {
+  position: absolute;
+  bottom: 10px;
+  background-color: var(--color-section-bg);
+  color: var(--color-highlight);
+  border-radius: 0px 20px 20px 0px;
+  width: 132px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-secondary);
+  font-size: 17px;
+  font-weight: 500;
+  z-index: 1;
+  padding: 2px;
+}
+
+.card-content {
+  background: var(--color-card-bg);
+  padding: 15px;
+  margin-top: -5px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.card-heading {
+  color: var(--color-section-bg);
+  font-size: 30px;
+}
+
+.card-content p {
+  color: #446129;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.latest-blog-btn {
+  border-radius: 15px;
+  background: var(--color-section-bg);
+  padding: 10px;
+  width: 10%;
+  height: 30px;
+  cursor: pointer;
+  margin-top: -105px;
+}
+
+.latest-blog-btn button {
+  background: var(--color-section-bg);
+  color: var(--color-highlight);
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  margin-left: 20px;
+  margin-top: 3px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
