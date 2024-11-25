@@ -133,7 +133,7 @@ p {
 #footerSection {
   background-color: var(--color-section-bg);
 }
-.container {
+.footer-container {
   padding: 25px 50px 15px 50px;
 }
 
@@ -208,4 +208,117 @@ p {
   font-size: 16px;
   color: var(--color-social-icon-bg);
   letter-spacing: 0.5px;
+}
+
+/* Existing navbar styles remain the same */
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--color-social-icon-bg);
+}
+
+/* Mobile Navigation Drawer */
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-nav-drawer {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 280px;
+  height: 100vh;
+  background-color: var(--color-section-bg);
+  z-index: 999;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.drawer-header {
+  padding: 20px;
+  text-align: right;
+  position: relative;
+  z-index: 1000;
+}
+
+.close-drawer {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--color-social-icon-bg);
+}
+
+.drawer-content {
+  padding: 45px;
+  height: calc(100% - 64px);
+  overflow-y: auto;
+}
+
+.drawer-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.drawer-content ul li {
+  margin-bottom: 20px;
+}
+
+.drawer-content ul li a {
+  text-decoration: none;
+  color: var(--color-social-icon-bg);
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 10px 0;
+}
+
+.drawer-content ul li a:hover {
+  color: var(--color-hover);
+  font-weight: bold;
+}
+
+/* Show overlay and drawer when active */
+.mobile-nav-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+.mobile-nav-drawer.active {
+  right: 0;
+  visibility: visible;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  #navbar {
+    padding: 0 20px;
+    position: relative;
+    z-index: 997;
+  }
+
+  .navbar-logo img {
+    max-height: 80px;
+  }
 }
