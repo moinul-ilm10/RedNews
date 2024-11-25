@@ -104,3 +104,92 @@
   font-family: var(--font-secondary);
   margin-top: -14px;
 }
+
+/* Responsive styles for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #newsletter {
+    padding: 60px 100px;
+  }
+
+  .newsletter-image-text {
+    gap: 5rem;
+  }
+
+  .newsletter-text h3 {
+    font-size: 26px;
+  }
+
+  .newsletter-text p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .email-input-field {
+    font-size: 14px;
+  }
+
+  .email-submit-btn {
+    padding: 12px 40px;
+    font-size: 13px;
+    margin-right: -1px;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 767px) {
+  #newsletter {
+    padding: 40px 20px;
+  }
+
+  .newsletter-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .newsletter-image-text {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-image {
+    align-self: center;
+    width: 40%;
+  }
+
+  .newsletter-text {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .newsletter-text h3 {
+    font-size: 22px;
+  }
+
+  .newsletter-text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .newsletter-email-input {
+    width: 100%;
+    max-width: none;
+  }
+
+  .email-input-field {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .email-submit-btn {
+    font-size: 12px;
+    padding: 10px 28px;
+    margin-right: 7px;
+  }
+
+  .newsletter-caption {
+    font-size: 10px;
+    text-align: center;
+  }
+}
