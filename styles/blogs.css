@@ -120,4 +120,8 @@
     grid-template-rows: repeat(2, auto);
     gap: 10px 10px;
   }
+
+  .latest-blog-btn {
+    width: 40%;
+  }
 }

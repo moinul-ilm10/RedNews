@@ -122,4 +122,8 @@
     grid-template-rows: repeat(2, auto);
     gap: 10px 10px;
   }
+
+  .latest-courses-btn {
+    width: 40%;
+  }
 }
