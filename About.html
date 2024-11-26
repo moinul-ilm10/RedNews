@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedNews</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/courses.css">
+    <link rel="stylesheet" href="./styles/blogs.css">
+    <link rel="stylesheet" href="./styles/newsletter.css">
+    <link rel="stylesheet" href="./styles/header.css">
+
+    <!-- Add Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/d346201faf.js" crossorigin="anonymous"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!-- header section  -->
+    <header id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#"><img src="./asset/logo/RedNews_Logo.png" alt=""></a>
+            </div>
+            <!-- Regular navbar links for desktop -->
+            <div class="navbar-link desktop-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Hamburger icon for mobile -->
+            <div class="mobile-menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer">
+        <div class="drawer-header">
+            <i class="fa-solid fa-xmark close-drawer"></i>
+        </div>
+        <nav class="drawer-content">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- footer section  -->
+    <footer id="footerSection">
+        <div class="footer-container">
+            <div class="footer-body">
+                <h3 class="footer-heading">Dive Into Skills</h3>
+                <div class="footer-content">
+                    <p>The latest articles and courses to
+                        help you upgrade your skills and learn
+                        the latest trends. Master web
+                        Development with these amazing
+                        resources that are available for free Extra!</p>
+                    <div class="footer-menu-1">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-1">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social-link">
+                    <img src="./asset/social/akar-icons_facebook-fill.svg" alt="facebook_icon">
+                    <img src="./asset/social/akar-icons_instagram-fill.svg" alt="instagram_icon">
+                    <img src="./asset/social/akar-icons_twitter-fill.svg" alt="twitter_icon">
+                    <img src="./asset/social/akar-icons_linkedin-box-fill.svg" alt="linkedIn_icon">
+                    <img src="./asset/social/akar-icons_youtube-fill.svg" alt="YouTube_icon">
+                    <img src="./asset/social/akar-icons_slack-fill.svg" alt="slack_icon">
+                    <img src="./asset/social/akar-icons_discord-fill.svg" alt="discord_icon">
+                </div>
+                <div style="display: flex;" class="footer-footnote">
+                    <p style="flex-grow: 1">COPYRIGHT @ 2022 Dive Into Skills</p>
+                    <p style="flex-grow: 1; text-align: center;">Developed by: Ahmad Raza</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+
+</html>
