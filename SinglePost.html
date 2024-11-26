@@ -7,11 +7,21 @@
     <title>RedNews</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/singlepost.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/blogs.css">
+    <!-- <link rel="stylesheet" href="./styles/footer.css"> -->
 
     <!-- Add Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap"
         rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/d346201faf.js" crossorigin="anonymous"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -19,8 +29,11 @@
     <!-- header section  -->
     <header id="navbar">
         <div class="navbar-container">
-            <div class="navbar-logo"><a href="#"><img src="./asset/logo/RedNews_Logo.png" alt=""></a></div>
-            <div class="navbar-link">
+            <div class="navbar-logo">
+                <a href="#"><img src="./asset/logo/RedNews_Logo.png" alt=""></a>
+            </div>
+            <!-- Regular navbar links for desktop -->
+            <div class="navbar-link desktop-nav">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Blogs</a></li>
@@ -29,8 +42,29 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
+            <!-- Hamburger icon for mobile -->
+            <div class="mobile-menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer">
+        <div class="drawer-header">
+            <i class="fa-solid fa-xmark close-drawer"></i>
+        </div>
+        <nav class="drawer-content">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <section id="blogDetails">
         <div class="blog-details-container">
@@ -271,6 +305,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- jquery cdn link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- <script src="./js/jquery.js"></script> -->
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>

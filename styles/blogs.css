@@ -184,4 +184,8 @@
   .latest-blog-btn {
     width: 40%;
   }
+
+  .latest-blog-heading {
+    font-size: 30px;
+  }
 }

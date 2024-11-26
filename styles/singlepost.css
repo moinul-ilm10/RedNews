@@ -136,3 +136,188 @@ p {
   width: 3rem;
   height: 5rem;
 }
+
+/* Medium Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .blog-details-container {
+    padding: 40px;
+  }
+
+  .blog-title {
+    font-size: 24px;
+  }
+
+  .blog-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .blog-owner {
+    gap: 15px;
+  }
+
+  .blog-owner img {
+    width: 70px;
+  }
+
+  .blog-owner h6 {
+    font-size: 20px;
+  }
+
+  .blog-date p {
+    font-size: 20px;
+    margin-right: 0;
+  }
+
+  .blog-image img {
+    height: 350px;
+  }
+
+  .blog-desc p {
+    font-size: 18px;
+  }
+
+  .share-heading {
+    font-size: 35px;
+  }
+
+  .social-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .share-social-link img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .footer-content p {
+    font-size: 12px;
+    width: 100%;
+    word-spacing: 3px;
+  }
+}
+
+/* Small Tablets and Large Phones (576px - 767px) */
+@media screen and (max-width: 767px) {
+  .blog-details-container {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .blog-title {
+    font-size: 22px;
+  }
+
+  .blog-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .blog-owner {
+    gap: 10px;
+  }
+
+  .blog-owner img {
+    width: 60px;
+  }
+
+  .blog-owner h6 {
+    font-size: 18px;
+  }
+
+  .blog-date p {
+    font-size: 18px;
+  }
+
+  .blog-image img {
+    height: 300px;
+  }
+
+  .blog-desc p {
+    font-size: 16px;
+  }
+
+  .share-heading {
+    font-size: 30px;
+  }
+
+  .social-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .share-social-link img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .footer-content p {
+    font-size: 12px;
+    width: 100%;
+    word-spacing: 3px;
+  }
+}
+
+/* Mobile Devices (up to 575px) */
+@media screen and (max-width: 575px) {
+  .blog-details-container {
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .blog-title {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .blog-title h2 {
+    font-size: 16px;
+  }
+
+  .blog-info {
+    gap: 8px;
+  }
+
+  .blog-owner {
+    gap: 8px;
+  }
+
+  .blog-owner img {
+    width: 50px;
+  }
+
+  .blog-owner h6 {
+    font-size: 16px;
+  }
+
+  .blog-date p {
+    font-size: 16px;
+  }
+
+  .blog-image {
+    padding: 0 10px;
+  }
+
+  .blog-image img {
+    height: 250px;
+  }
+
+  .blog-desc p {
+    font-size: 14px;
+  }
+
+  .share-heading {
+    font-size: 25px;
+  }
+
+  .social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .share-social-link img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
