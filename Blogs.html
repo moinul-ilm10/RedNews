@@ -4,11 +4,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RedNews</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/courses.css">
+    <link rel="stylesheet" href="./styles/blogs.css">
+    <link rel="stylesheet" href="./styles/newsletter.css">
+    <link rel="stylesheet" href="./styles/header.css">
+
+    <!-- Add Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <script src="https://kit.fontawesome.com/d346201faf.js" crossorigin="anonymous"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-    <h1>Welcome to blogs.</h1>
+    <!-- header section  -->
+    <header id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#"><img src="./asset/logo/RedNews_Logo.png" alt=""></a>
+            </div>
+            <!-- Regular navbar links for desktop -->
+            <div class="navbar-link desktop-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Hamburger icon for mobile -->
+            <div class="mobile-menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer">
+        <div class="drawer-header">
+            <i class="fa-solid fa-xmark close-drawer"></i>
+        </div>
+        <nav class="drawer-content">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="blogsPage">
+        <div class="blog-page-container">
+            <h3 class="blogs-page-heading">Latest Blogs</h3>
+            <div class="blog-page-content">
+                <aside class="blog-page-category">
+                    <h4 class="blog-category-heading">Categories</h4>
+                    <ul class="blog-category-list">
+                        <li>Category 1</li>
+                        <li>Category 1</li>
+                        <li>Category 1</li>
+                        <li>Category 1</li>
+                        <li>Category 1</li>
+                        <li>Category 1</li>
+                        <li>Category 1</li>
+                    </ul>
+                </aside>
+                <div class="blog-page-container">
+                    <div class="blog-post-container">
+                        <div class="blog-card">
+                            <div class="card-img">
+                                <img src="./asset/blog/card_img.png">
+                                <div class="card-label">Category</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-heading">
+                                    Title goes here
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit
+                                    amet
+                                    condimentum porttitor. Integer
+                                    augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                                <div class="card-footer">
+                                    <p>24/04/2022</p>
+                                    <p>By: Ahmad Raza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="card-img">
+                                <img src="./asset/blog/card_img.png">
+                                <div class="card-label">Category</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-heading">
+                                    Title goes here
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit
+                                    amet
+                                    condimentum porttitor. Integer
+                                    augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                                <div class="card-footer">
+                                    <p>24/04/2022</p>
+                                    <p>By: Ahmad Raza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="card-img">
+                                <img src="./asset/blog/card_img.png">
+                                <div class="card-label">Category</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-heading">
+                                    Title goes here
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit
+                                    amet
+                                    condimentum porttitor. Integer
+                                    augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                                <div class="card-footer">
+                                    <p>24/04/2022</p>
+                                    <p>By: Ahmad Raza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="card-img">
+                                <img src="./asset/blog/card_img.png">
+                                <div class="card-label">Category</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-heading">
+                                    Title goes here
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit
+                                    amet
+                                    condimentum porttitor. Integer
+                                    augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                                <div class="card-footer">
+                                    <p>24/04/2022</p>
+                                    <p>By: Ahmad Raza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="card-img">
+                                <img src="./asset/blog/card_img.png">
+                                <div class="card-label">Category</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-heading">
+                                    Title goes here
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit
+                                    amet
+                                    condimentum porttitor. Integer
+                                    augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                                <div class="card-footer">
+                                    <p>24/04/2022</p>
+                                    <p>By: Ahmad Raza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="card-img">
+                                <img src="./asset/blog/card_img.png">
+                                <div class="card-label">Category</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-heading">
+                                    Title goes here
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit
+                                    amet
+                                    condimentum porttitor. Integer
+                                    augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                                <div class="card-footer">
+                                    <p>24/04/2022</p>
+                                    <p>By: Ahmad Raza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="card-img">
+                                <img src="./asset/blog/card_img.png">
+                                <div class="card-label">Category</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-heading">
+                                    Title goes here
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit
+                                    amet
+                                    condimentum porttitor. Integer
+                                    augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                                <div class="card-footer">
+                                    <p>24/04/2022</p>
+                                    <p>By: Ahmad Raza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="card-img">
+                                <img src="./asset/blog/card_img.png">
+                                <div class="card-label">Category</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-heading">
+                                    Title goes here
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit
+                                    amet
+                                    condimentum porttitor. Integer
+                                    augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                                <div class="card-footer">
+                                    <p>24/04/2022</p>
+                                    <p>By: Ahmad Raza</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-card">
+                            <div class="card-img">
+                                <img src="./asset/blog/card_img.png">
+                                <div class="card-label">Category</div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-heading">
+                                    Title goes here
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit
+                                    amet
+                                    condimentum porttitor. Integer
+                                    augue urna, volutpat in sapien a, convallis commodo quam.</p>
+                                <div class="card-footer">
+                                    <p>24/04/2022</p>
+                                    <p>By: Ahmad Raza</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-blog-btn"><button type="submit">Load More</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- <script src="./js/jquery.js"></script> -->
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>

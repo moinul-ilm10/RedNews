@@ -1,4 +1,4 @@
-/* --------------------------- latest blogs and courses section style -------------------------------------- */
+/* --------------------------- latest blogs and  blog page section style -------------------------------------- */
 #latestBlogs {
   padding: 25px;
   position: relative;
@@ -111,6 +111,66 @@
   margin-top: 3px;
   cursor: pointer;
   transition: opacity 0.3s ease;
+}
+
+/* --------------------------- blog page style -------------------------------------- */
+
+#blogsPage {
+  overflow-x: hidden;
+}
+
+.blog-page-container {
+  padding: 70px 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogs-page-heading {
+  font-size: 44px;
+  font-weight: bold;
+  color: var(--color-section-bg);
+  text-align: center;
+}
+
+.blog-page-content {
+  display: flex;
+  flex-direction: row;
+  /* gap: 20px; */
+}
+
+.blog-page-category {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 70px;
+}
+
+.blog-category-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.blog-category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 7px;
+}
+
+.blog-category-list li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--font-secondary);
+}
+
+.blog-post-container {
+  flex-basis: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(3, 3fr);
+  gap: 20px 20px;
 }
 
 @media screen and (max-width: 767px) {
