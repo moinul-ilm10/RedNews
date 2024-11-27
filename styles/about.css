@@ -1,0 +1,167 @@
+:root {
+  /* Global Font Variables */
+  --font-primary: "Merriweather", serif;
+  --font-secondary: "Lato", sans-serif;
+
+  /* Base Colors */
+  --color-body: #f3f4d3;
+  --color-highlight: #fcee21;
+
+  /* Section Colors */
+  --color-section-bg: #183114;
+  --color-section-content: #446129;
+
+  /* Text Colors */
+  --color-paragraph: #fafafa;
+
+  /* Card Colors */
+  --color-card-bg: #dcde9f;
+
+  /* Interaction Colors */
+  --color-hover: #f8ed41;
+
+  /* Social Icon Colors */
+  --color-social-icon-bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-body);
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--font-secondary);
+}
+
+#aboutPage {
+  padding: 65px;
+}
+
+.about-heading {
+  font-size: 50px;
+  text-decoration: center;
+  font-weight: bold;
+  color: var(--color-section-bg);
+  text-align: center;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 8rem;
+}
+
+.about-paragraph {
+  padding: 35px 5rem 0px 10px;
+  font-size: 30px;
+  line-height: 1.8;
+}
+
+.about-detail-image {
+  padding: 40px 10px 0px 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.about-introduction {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.about-introduction-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-introduction-heading {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 14px;
+}
+
+.about-introduction a {
+  color: var(--color-section-bg);
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.about-intro-image {
+  padding: 40px 82px 0px 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.image-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.about-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  z-index: 9;
+  position: relative;
+  padding: 40px 10px 0px 10px;
+}
+
+.triangle-card-top {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  transition: all 0.3s ease;
+}
+
+.triangle-card-bottom {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  clip-path: polygon(0 100%, 0 0, 100% 100%);
+  transition: all 0.3s ease;
+}
+
+.triangle-card-top.top-right {
+  top: 25px;
+  right: -25px;
+  background-color: var(--color-section-content);
+  z-index: 2;
+}
+
+.triangle-card-bottom.bottom-left {
+  bottom: -57px;
+  left: -10px;
+  background-color: var(--color-card-bg);
+  z-index: 2;
+}
+
+.triangle-card-top.top-right.intro-card-bg {
+  background-color: var(--color-section-content);
+}
+
+.triangle-card-bottom.bottom-left.intro-card-bg {
+  background-color: var(--color-section-content);
+}
+
+.triangle-card-top.top-right.detail-card-bg {
+  background-color: var(--color-section-bg);
+}
+
+.triangle-card-bottom.bottom-left.detail-card-bg {
+  background-color: var(--color-section-bg);
+}
