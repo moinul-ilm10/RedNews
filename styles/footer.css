@@ -2,7 +2,7 @@
 #footerSection {
   background-color: var(--color-section-bg);
 }
-.container {
+.footer-container {
   padding: 25px 50px 15px 50px;
 }
 
